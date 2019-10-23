@@ -1,0 +1,492 @@
+.w{
+  width: 1110px;
+  margin: 0 auto;
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+p,ul,h1,h2{
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0;
+}
+input{
+  border: 0;
+  outline: none;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height:0px;
+}
+
+/* color:#FD5F00 */
+/* 字体：
+5F4F4F */
+/* 背景：
+0D1128 */
+header{
+  height: 100px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+header .header-top {
+  height: 100px;
+  /* background-color: green; */
+}
+.header-top a{
+  display: inline-block;
+  margin: 30px 0;
+}
+.header-top span{
+  color: #777;
+}
+.header-top>span{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #FD5F00;
+  margin: 30px 0;
+  margin-left: 108px;
+}
+header .email-wrap, header .call-wrap{
+  width: 223px;
+  height: 40px;
+  margin: 30px 0;
+  position: relative;
+  padding-left: 34px;
+}
+
+header i{
+  font-size: 25px;
+  position: absolute;
+  left: -16px;
+  top: 15px;
+  color: #FD5F00;
+}
+.header-top p{
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.nav{
+  height: 70px;
+  background-color: #0d1128;
+  position: relative;
+}
+.nav ul{
+  float: left;
+}
+.nav ul>li{
+  float: left;
+  margin: 0 20px;
+  line-height: 70px;
+  color: #fff;
+  font-weight: bold;
+  list-style: none;
+}
+.nav a{
+  text-decoration: none;
+  color: #fff;
+}
+.nav ul li:nth-child(1) a{
+  color: #FD5F00;
+}
+.search{
+  width: 267px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px 20px;
+  float: right;
+  border-radius: 18px;
+  border: 1px solid #b2b3ba;
+  padding-left: 18px;
+  color: #b2b3ba;
+  font-size: 20px;
+}
+.nav ul+i{
+  color: #b2b3ba;
+  font-size: 18px;
+  position: absolute;
+  top: 26px;
+  right: 30px;
+}
+.banner{
+  height: 600px;
+  background-image: url('./../images/bg_2.jpg');
+  background-size: cover;
+  position: relative;
+}
+.banner .cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+  opacity: 0.5;
+  z-index: 1;
+}
+.banner .banner-inner{
+  position: relative;
+  top: 30%;
+  z-index: 10;
+}
+.banner-inner{
+  color: #fff;
+  font-weight: bold;
+}
+.banner-inner p{
+  font-size: 40px;
+}
+.banner-inner p+p{
+  margin-bottom: 40px;
+}
+.banner-inner>span{
+  font-weight: normal;
+  font-size: 16px;
+}
+.banner-inner div{
+  margin-top: 40px;
+}
+.banner-inner div{
+  position: absolute;
+  width: 142px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 22px;
+  background-color: #FD5F00;
+  text-align: center;
+  z-index: 10;
+  transition: background-color 0.8s ease;
+}
+.banner-inner div:hover{
+  position: absolute;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #FD5F00;
+  color: #FD5F00;
+  opacity: 1;
+}
+/* 老师介绍 */
+.intro{
+  display: flex;
+  height: 420px;
+}
+.intro>div{
+  flex: 1;
+  text-align: center;
+  background-color: #FD5F00;
+  color: #fff;
+}
+.intro>div:nth-child(even){
+  background-color: #0d1128;
+}
+.intro>div div{
+  margin: 53px 0 36px;
+}
+.intro>div div i{
+  font-size: 55px;
+}
+.intro>div div+p{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+/*offer*/
+.offer{
+  height: 920px;
+  /* background-color: #eee; */
+  display: flex;
+}
+.offer .img{
+  flex: 4;
+  background: url('./../images/about.jpg') no-repeat -80px;
+  background-size: cover;
+  background-color: #FD5F00;
+}
+.offer-course{
+  flex: 6;
+  }
+.course-list-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.offer-course .offer-course-intro h1{
+  margin: 60px 0 44px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.offer-course-intro h1+span{
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+.offer-course .course-list{
+  margin-top: 60px;
+  width: 328px;
+  height: 137px;
+  /* background-color: yellowgreen; */
+}
+.course-list{
+  display: flex;
+}
+.course-list .icon{
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background-color: #FD5F00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+.course-list .icon i{
+  font-size: 36px;
+  color: #fff;
+}
+.course-list .course-content h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.course-list .course-content span{
+  font-size: 14px;
+  color: #a7a7a7;
+}
+
+/* uni-intro */
+.uni-intro{
+  height: 784px;
+  background: url(./../images/bg_3.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.uni-intro .cover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #0d1128 0%, #fd6100 100%);
+  opacity: 0.8;
+  z-index: 1;
+}
+.uni-intro .uni-top{
+  padding-top: 112px;
+  height: 372px;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.video{
+  flex: 1;
+}
+.uni-intro-wrap{
+  flex: 1;
+  margin-left: 50px;
+}
+.uni-intro-wrap h1{
+  margin-top: 10px;
+  font-size: 36px;
+}
+.uni-intro-wrap h1~p{
+  font-size: 16px;
+  margin-top: 20px;
+}
+.uni-bottom{
+  position: relative;
+  margin-top: 74px;
+  height: 226px;
+  display: flex;
+  z-index: 10;
+}
+.uni-bottom .num{
+  flex: 1;
+  text-align: center;
+  color: #fff;
+}
+.uni-bottom .num h2{
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.uni-bottom .num span{
+  font-size: 20px;
+}
+
+/* Certified teachers */
+
+.intro-teacher{
+  height: 1024px;
+  background-color: #fafafa;
+}
+.intro-teacher .certified-teacher{
+  box-sizing: border-box;
+  height: 330px;
+  text-align: center;
+}
+.certified-teacher h1{
+  font-size: 40px;
+  padding: 84px 0 47px;
+}
+.certified-teacher h1+span{
+  color: #777;
+  font-size: 16px;
+}
+.intro-teacher .teacher-info{
+ height: 528px;
+ box-sizing: border-box;
+ display: flex;
+ justify-content: space-evenly;
+}
+.teacher-info .teacher-detail{
+  width: 390px;
+  height: 528px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.teacher-detail .teacher-photo{
+  height: 400px;
+  /* box-sizing: border-box; */
+  background: url(./../images/teacher-1.jpg) no-repeat 0 0;
+  background-size: cover;
+  transition: all ease 0.4s;
+}
+.teacher-detail .teacher-photo:hover{
+  background: url(./../images/teacher-1.jpg) no-repeat 0 -5px;
+  background-size: cover;
+  cursor: pointer;
+}
+.teacher-detail .teacher-photo+p{
+  margin: 27px 0 10px;
+  font-weight: bold;
+}
+.teacher-detail .teacher-photo+p+p{
+  font-size: 12px;
+  color: red;
+}
+.teacher-detail span{
+  font-size: 12px;
+  color: #777777;
+}
+/* footer */
+footer{
+  height: 700px;
+  background-color: #232323;
+}
+.footer-wraper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .item{
+  width: 247px;
+  margin-top: 88px;
+  height: 500px;
+  /* background-color: yellowgreen; */
+  flex-direction: column;
+}
+footer .item:nth-child(even){
+  /* background-color: yellow; */
+}
+.footer-wraper .item h2{
+  margin-bottom: 50px;
+  color: #fff;
+}
+.item .ul{
+  list-style: none;
+  position: relative;
+}
+.item .ul li{
+  margin-bottom: 20px;
+  padding-left: 25px;
+  color: #fff;
+  font-size: 14px;
+}
+.item .ul li i{
+  position: absolute;
+  padding-top: 3px;
+  left: 0px;
+}
+.custom{
+  display: flex;
+  flex-direction: column;
+}
+/* .custom h2{
+  text-align: center;
+} */
+.blog-info{
+  display: flex;
+  height: 150px;
+}
+.blog-info .blog-img{
+  width: 60px;
+  height: 60px;
+  background: url('./../images/image_1.jpg') no-repeat -15px 0;
+  background-size: cover;
+}
+.blog-info .blog-intro{
+  flex: 1;
+  margin-left: 15px;
+}
+.blog-intro a{
+  color: #fff;
+  text-decoration: none;
+}
+.blog-intro div:nth-child(1){
+  margin-bottom: 10px;
+}
+.blog-intro span{
+  font-size: 12px;
+  color: #787878;
+}
+.subscribe input#email,.subscribe input#btnSubscribe{
+  height: 53px;
+  background-color: #393939;
+  text-align: center;
+  font-size: 20px;
+  color: #7b7b7b;
+  margin-bottom: 10px;
+}
+.subscribe input#btnSubscribe{
+  background-color: #5d50c6;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.connect ul{
+  list-style: none;
+  overflow: hidden;
+}
+.connect ul li{
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: #393939;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.connect ul li i{
+  font-size: 20px;
+}
+.copyright{
+  text-align: center;
+  color: #fafafa;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>两面翻转图片</title>
+  <style>
+    .parent{
+      position: relative;
+    }
+    .box1{
+      width: 224px;
+      height: 224px;
+      backface-visibility: hidden;
+    }
+    .box2{
+      position: absolute;
+      top:0;
+      left: 0;
+      z-index: -1;
+    }
+    .box1,.box2{
+      transition: all 1s ease;
+    }
+    .parent:hover .box1,.parent:hover .box2{
+      transform: rotateY(180deg)
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+      <div class="box1"><img src="./../../css3media/qian.svg" alt=""></div>
+      <div class="box2"><img src="./../../css3media/hou.svg" alt=""></div>
+  </div>
+</body>
+</html>

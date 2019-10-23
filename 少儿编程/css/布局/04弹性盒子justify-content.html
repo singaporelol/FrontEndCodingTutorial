@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>justify-content</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    section{
+      height: 800px;
+      width: 800px;
+      margin: 0 auto;
+      border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    div{
+      height: 200px;
+      width: 200px;
+    }
+    div:nth-child(1){
+      background-color: green;
+      
+    }
+    div:nth-child(2){
+      background-color: yellowgreen;
+      
+    }
+    div:nth-child(3){
+      background-color: pink;
+      
+    }
+  
+  </style>
+</head>
+<body>
+  <section>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </section>
+</body>
+</html>

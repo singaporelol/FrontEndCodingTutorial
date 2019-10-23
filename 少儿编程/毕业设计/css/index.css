@@ -1,0 +1,150 @@
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+h1,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 150px;
+  position: relative;
+}
+
+header>.log {
+  position: absolute;
+  float: left;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+header>.log>img {
+  height: 100px;
+  width: 100px;
+}
+
+header .title {
+  text-align: center;
+}
+
+header .title h1 {
+  height: 75px;
+  line-height: 75px;
+  color: #204F8C;
+}
+
+/* 导航区域 */
+section nav {
+  margin-top: 30px;
+  height: 60px;
+}
+
+section>nav>ul {
+  height: 60px;
+}
+
+section>nav>ul li {
+  height: 60px;
+  line-height: 60px;
+  width: 213.3px;
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+
+section>nav>ul li:hover,
+section>nav>ul li:nth-child(1) {
+  background-color: #EDE9E1;
+  cursor: pointer;
+}
+
+section>nav>ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #444;
+}
+
+.banner {
+  clear: both;
+  height: 440px;
+  width: 1280px;
+  background: url(./../img/banner.jpeg) no-repeat;
+  opacity: 0.95;
+  background-size: 1280px 440px;
+  position: relative;
+}
+
+.banner .first-title {
+  position: absolute;
+  margin: 50px 20px;
+}
+
+#header-chinese {
+  margin-top: 50px;
+}
+
+.banner h1 {
+  color: #fff;
+}
+
+/* 中间内容区域 */
+.main {
+  margin-top: 80px;
+  color: #204F8C;
+}
+
+.main .introduction {
+  text-align: center;
+}
+
+.main .introduction h1 {
+  font-size: 50px;
+}
+
+.main .main-content-left {
+  float: left;
+}
+
+.main .main-content-right {
+  float: right;
+}
+
+.last {
+  clear: both;
+  margin-bottom: 50px;
+
+}
+
+.main-content-wrap {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.footer{
+  height: 700px;
+}
+.footer .footer-top-wrap{
+  height: 400px;
+  background-color: #2F2E2E;
+  position: relative;
+}
+.footer .footer-top-wrap .footer-top{
+  position: absolute;
+  height: 300px;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #204F8C;
+}
+.footer .footer-bottom{
+  height: 300px;
+  margin: 0 auto;
+  background-color: #eee;
+  text-align: center;
+  position: relative;
+}

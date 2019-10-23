@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>新浪导航案例</title>
+  <style>
+    body,ul,li{
+      padding: 0;
+      margin: 0;
+    }
+    .menu{
+      border-top: 3px solid #FF8500;
+      background-color: #FCFCFC;
+    }
+    .menu>li{
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 40px;
+      list-style: none;
+      position: relative;
+      overflow: hidden;
+    }
+    a{
+      text-decoration: none;
+      color: #000;
+    }
+    .menu>li:hover{
+      background-color: #eee;
+      cursor: pointer;
+      overflow: visible;
+    }
+    .menu>li:hover a{
+      color: #FF8500;
+    }
+    .menu>li:hover .triangle::after{
+     border-color: #eee transparent transparent;
+    }
+    .triangle{
+      display: block;
+      width: 0px;
+      height: 0px;
+      border: 7px solid #FF8500 ;
+      border-color: #FF8500 transparent transparent;
+      position: absolute;
+      top: 17px;
+      right: 20px;
+    }
+    .triangle::after{
+      content: "";
+      width: 0;
+      height: 0;
+      border: 10px solid red;
+      border-color: #FCFCFC transparent transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%,calc(-50% - 3px))
+    }
+    .menu .menu-list{
+      background-color: #FCFCFC;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+    }
+    .menu .menu-list>li{
+      width: 120px;
+      height: 40px;
+      line-height: 40px;
+      list-style: none;
+      padding: 0 40px;
+      border-bottom: 1px solid #FF8500;
+    }
+    .menu .menu-list>li:hover{
+      background-color: yellowgreen;
+      color: bisque;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <ul class="menu">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">手机新浪网</a></li>
+    <li>
+      <a href="#">移动客户端</a>
+      <i class="triangle"></i>
+      <ul class="menu-list">
+        <li>新浪微博</li>
+        <li>新浪新闻</li>
+        <li>新浪财经</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
