@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>盗财宝</title>
+</head>
+<body>
+  <script>
+    let nums=[-2,1,-3,4,-1,2,1,-5,4];
+    getMax(nums);
+    function getMax(nums)  {
+      let m=[];
+      if(nums.length==0){return 0}
+      if(nums.length==1) {return nums[0]}
+      m.push(nums[0])
+      for(let i=1;i<nums.length;i++){
+        m.push(Math.max(m[i-1],m[i-i]+nums[i],m[i]))
+      }
+      return m.pop()
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组倒转</title>
+    <script>
+        var arr=[90, 8, 34,  2,  39, 87, 22, 10, 34];
+        // let result=arr.reverse();
+        // console.log(result);
+        //第二种方法：
+        //  result=[];
+        // for(var i=0;i<arr.length;i++){
+        //     result.unshift(arr[i])
+        // }
+        // console.log(result)
+        //第3种方法：
+        for(var i=0;i<arr.length/2;i++){
+            var temp=arr[i];
+            arr[i]=arr[arr.length-1-i];
+             arr[arr.length-1-i]=temp;
+        }
+        console.log(arr)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let a = [2,3,10,2,4,8,1];
+    let s1 = "aardvark";
+    let s2 = "apple";
+
+
+    function xxx(a) {
+      let b = [];
+      let s = new Set();
+      for (let i = 1; i < a.length; i++) {
+        for (let j = i - 1; j >= 0; j--) {
+          if (a[i] > a[j]) {
+            s.add(a[i] - a[j])
+          }
+        }
+      }
+      s.forEach(item => {
+        b.push(item)
+      })
+      let max = a.sort((a, b) => b - a)[0];
+      let diff = b.sort((a, b) => a - b)[0];
+      return max - diff;
+    }
+    console.log(xxx(a))
+  </script>
+</body>
+
+</html>

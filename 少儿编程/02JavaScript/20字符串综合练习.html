@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>字符串综合练习</title>
+  <script>
+    //#region 字符串综合练习
+    //截取字符串abcdefg的efg;
+    // var str="abcdefg";
+    // console.log(str.substring(4))
+    // console.log(str.slice(4))
+    // console.log(str.substring(4,7))
+    // console.log(str.slice(4,7))
+
+    // 逆序字符串最少 2 种方法
+    // var str="abcdefg";
+    // 第一种方法 for循环
+    // var result="";
+    // for(var i=str.length;i>=0;i--){
+    //   result+=str.charAt(i)
+    // }
+    // console.log(result)
+    //第二种方法：
+    // var result="";
+    // for(var i=0;i<str.length;i++){
+    //    result=str.charAt(i).concat(result)
+    // }
+    // console.log(result)
+    //第3种方法：
+    // console.log(str.split("").reverse().join(""))
+
+    // 判断一个字符串中出现次数最多的字符，统计这个次数
+    //使用obj{}
+    // obj={
+    //   a:1,
+    //   b:2,
+    //   1:1
+    // }
+    // var str="aaabbbbccdef";
+    // var obj={};
+    // for(var i=0;i<str.length;i++){
+    //   if(str[i] in obj){
+    //     obj[str[i]]=obj[str[i]]+1;
+    //   }else{
+    //     obj[str[i]]=1;
+    //   }
+    // }
+    // var max=0;
+    // var char="";
+    // for (const key in obj) {
+    //   if (obj.hasOwnProperty(key)) {
+    //     const element = obj[key];
+    //     if(element>max){
+    //       char=key;
+    //       max=element;
+    //     }
+    //   }
+    // }
+    // console.log("出现的最多的字符是："+char+". 最大值是："+max+". ")  
+    //#endregion
+    
+    
+    //输入两个字符串，从第一个字符串中删除第二个字符串中的所有字符。不可以使用replace
+    //例如：输入“They are students” 和“aeiou”
+    //则删除之后的第一个字符串变成 “Thy r stdnts”
+    var str="They are students";
+    var str2="aeiou";
+    //使用replace方法来实现
+    // var result="";
+    // for(var i=0;i<str2.length;i++){
+    // 讲解为什么不能使用if，因为replace方法，只能replace第一个
+    //   while(str.indexOf(str2[i])!=-1){
+    //     str=str.replace(str2[i],"");
+    //   }
+    // } 
+    // console.log(str)
+    //使用for循环+substring()
+    // for(var i=0;i<str2.length;i++){
+    //   var index=str.indexOf(str2[i]);
+    //   while(index!=-1){
+    //     // str.slice(index,index+1)
+    //     str=str.substring(0,index)+str.substring(index+1);
+    //     index=str.indexOf(str2[i]);      
+    //   }
+    // }
+    // console.log(str);
+
+    //使用for循环和split() 推荐使用！！
+    for(var i=0;i<str2.length;i++){
+      str=str.split(str2[i]).join("");
+    }
+    console.log(str);
+  
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>闭包</title>
+</head>
+<body>
+  <script>
+    function Person(name)  {
+      this.user_name=name;
+      var user_age=18;
+      this.setage=function(age){
+        return user_age=age
+      }
+      this.getage=()=>{
+        return user_age=user_age
+      }
+    }
+    var p1=new Person('11');
+    console.log(p1.user_age)
+    
+  </script>
+</body>
+</html>

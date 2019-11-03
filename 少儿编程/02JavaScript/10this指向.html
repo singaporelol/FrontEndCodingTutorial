@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>this指向</title>
+  <script>
+    var name = "唐僧";
+
+    function fun() {
+      //this指向window
+      console.log(this.name);
+    }
+    fun(); //输出唐僧。this指向window
+
+    var obj = {
+      name: "孙悟空",
+      sayName: fun
+    };
+    //fun==sayname
+    obj.sayName();
+    //this指向孙悟空。
+    console.log(fun==obj.sayName)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

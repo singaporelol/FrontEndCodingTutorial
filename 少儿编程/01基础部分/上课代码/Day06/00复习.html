@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>复习</title>
+  <style> 
+    input{
+      width: 150px;
+      height: 50px
+    }
+    span{
+      font-weight: 700;
+    }
+    .sunday{
+      display: block;
+      font-weight: 600;
+    }
+    .bgc{
+      width: 800px;
+      height: 300px;
+      /* background-color: yellowgreen; */
+      /* background-image: url(./table.png);
+      background-repeat: no-repeat; */
+      /* background-position: top right; */
+      /* background-position: left bottom; */
+      background: yellowgreen url(./table.png) 0 0 no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    1、块级元素(block)
+      a、什么块级元素？
+      div, h1-h6, ul,li,ol,p 
+    2、行内元素（in-line）
+      a、span，<a></a>, i, em, del, strong, ins
+    3、有什么特点？
+      a、块级元素独占一行。
+      b、行内元素不可以设置宽和高，块级元素才可以设置。
+      
+    4、行内块（inline-block）
+      a、在同一行显示。
+      b、可以设置宽和高。
+      c、image, input
+    5、不同元素的互相转换。
+      a、行内元素转换成块级元素：display:block
+      b、转成行内元素：display: inline
+      c、转成行内块：display:inline-block;
+    6、设置背景
+      background:的属性连写
+    7、display none和visibility hidden
+    8、font
+      size, weight, font-style, font-family
+   -->
+    <span>我是祥玉，我这个星期在家没有好好学习！</span>
+    <div>
+      学谦哥哥很不满意！！
+      <span class="sunday">今天是星期天</span>
+      <input type="button" value="点击我！！">
+    </div>
+    <span>祥玉回答问题正确了！</span>
+    <div class="bgc">
+        <!-- <img src="./table.png" alt="asdfs"> -->
+    </div>
+    
+    
+</body>
+</html>

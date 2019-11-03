@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数组综合练习</title>
+  <script>
+    // var arr=[90, 8, 34,  2,  39, 87, 22, 10, 34];
+    //#region 找数组最小值和索引
+    //第一种for循环
+    // let min=arr[0];
+    // let index=-1;
+    // for(var i=1;i<arr.length;i++){
+    //   if(min>arr[i]){
+    //     min=arr[i];
+    //     index=i;
+    //   }
+    // }
+    // console.log('数组最小值是：'+min+" 索引是：" +index);
+    //第二种方法使用forEach、map
+    // let min=Number.MAX_VALUE;
+    // let index=-1;
+    // arr.forEach((val,ind)=>{
+    //   if(min>val){
+    //     min=val;
+    //     index=ind;
+    //   }
+    // })
+    // console.log('数组最小值是：'+min+" 索引是：" +index);
+    //第三种方法使用apply,call借用Math方法
+    // let min=Math.min.apply(arr,arr);
+    // let index=arr.indexOf(min);
+    //或者使用
+    // let index=arr.findIndex(val=>val==min);
+    // console.log('数组最小值是：'+min+" 索引是：" +index);
+    //#endregion
+    //#region 求数组中数据的平均值、和
+    // let sum=0;
+    // for (const key in arr) {
+    //   if (arr.hasOwnProperty(key)) {
+    //     const element = arr[key];
+    //     sum+=element;
+    //   }
+    // }
+    // let avg=sum/arr.length;
+    // console.log('和是：'+sum+" 平均值是："+avg)
+    // let sum=0;
+    // for (const iterator of arr) {
+    //   sum+=iterator;
+    // }
+    // let avg=sum/arr.length;
+    // console.log('和是：'+sum+" 平均值是："+avg)
+    //#endregion
+    //#region 数组去重
+    // var arr = [1, 2, 33, 2,4, 3, 4, 3, 6, 10];
+    //第一种方法
+    //思路：使用2个数组，遍历arr中的值, 再检测是否存在于数组2中。如果存在，不存，不存在存入。
+    //   function getRidOfDuplicate(arr){
+    //     var result=[arr[0]];
+    //     for(var i=1;i<arr.length;i++){
+    //       var flag=false;
+    //       for(var j=0;j<result.length;j++){
+    //         if(arr[i]==result[j]){
+    //           flag=true;
+    //           break;
+    //         }
+    //       }
+    //       flag|| result.push(arr[i])
+    //     }
+    //     return result;
+    //   }
+    // console.log(getRidOfDuplicate(arr))
+
+    // function getRidOfDuplicate(arr) {
+    //   var result = [];
+    //   for (var i = 0; i < arr.length; i++) {
+    //     if(result.indexOf(arr[i])==-1){
+    //       result.push(arr[i]);
+    //     }
+    //   }
+    //   return result;
+    // }
+    // console.log(getRidOfDuplicate(arr))
+
+    //第二种思路：利用obj={}的特性
+    // let result=[];
+    // var obj={};
+    // for(var i=0;i<arr.length;i++){
+    //   obj[arr[i]]="";
+    // }
+    // console.log(obj);
+    // //#endregion
+    // for (const key in obj) {
+    //   if (obj.hasOwnProperty(key)) {
+    //     result.push(Number(key))
+    //   }
+    // }
+    // console.log(result);
+    //#endregion
+    //求数组中出现最多的数字和出现次数  
+    var arr = [1, 2, 2, 2, 3, 4, 6, 6, 6, 6, 6, 8];
+    //利用obj的特性，属性名不能重复。
+    //例如：
+    // let obj={
+    //   name:"zhangsan",
+    //   age:18
+    // }
+    // obj["name"]="lisi"
+    // obj["name"]="wangwu"
+    // console.log(obj);
+    var obj = {};
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] in obj) {
+        obj[arr[i]] = obj[arr[i]] + 1;
+      } else {
+        obj[arr[i]] = 1;
+      }
+    }
+    var max = 0;
+    var element = "";
+
+    for (const key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        const ele = obj[key];
+        if (max < ele) {
+          max = ele;
+          element = key;
+        }
+      }
+    }
+    console.log("出现最多的数字是：" + element + ". 出现的次数是：" + max)
+
+    //#region 数组排序
+    // console.log(arr.sort((a,b)=>a-b))
+    //使用方法封装
+    // console.log(sort(arr))
+    // function sort(arr){
+    //   return arr.sort(function(a,b){
+    //     return a-b;
+    //   })
+    // }
+    //冒泡排序
+    //9个数
+    var arr = [90, 8, 34, 2, 39, 87, 22, 10, 34];
+    //比较的轮数
+    for (var i = 0; i < arr.length - 1; i++) {
+      //比较的次数
+      for (var j = 0; j < arr.length - i - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+          var temp = arr[j + 1];
+          arr[j + 1] = arr[j];
+          arr[j] = temp;
+        }
+      }
+    }
+    console.log(arr)
+    //#endregion
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>日期对象</title>
+  <script>
+    //拿到当前时间
+    console.log(Date.now());
+    var now=Date.now();
+    var date=new Date();
+    console.log(date);
+    var current=new Date(now);
+    console.log(current)
+    //日期对象常用方法
+    //getDate() 当前的日期
+    console.log(date.getDate())
+    //getDay()当前的星期几
+    //会返回0-6的值。0表示星期天
+    console.log(date.getDay())
+    //getMonth()
+    console.log(date.getMonth())
+    // 获取当前时间对象的月份
+		// 	- 会返回一个0-11的值
+		// 		0 表示1月
+		// 		1 表示2月
+    // 		11 表示12月
+    //所以通常使用date.getMonth()+1
+    console.log(date.getMonth()+1)
+    //getFullYear
+    console.log(date.getFullYear())
+    //getTime 毫秒值
+    console.log(date.getTime())
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

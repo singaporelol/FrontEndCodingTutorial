@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>正则表达式3</title>
+  <script>
+    // var str='ssabbbcde 123asdfdd';
+    // var reg=/a[b]{3}/;
+    // reg=/ab{1,}/;
+    // reg=/ab{4,5}/;
+    // reg=/ab?c/;
+    // reg=/ab+c/;
+    // reg=/ab*c/;
+    // console.log(reg.test(str))
+    //元字符
+    // var str = 'abbbcde 123asdfdd';
+    // var reg = /a[b]{3}/;
+    // // ^a 表示以a开始
+    // // $表示结尾
+    // // .表示任意字符
+    // //表示以a开头，1个或多个b，c,0个或多个字符，d为结尾
+    // reg = /^ab+c.*(d)$/;
+    // console.log(reg.test(str))
+
+    //手机和电话号码
+    // 以9,8,6 开头，8位数字
+    // var reg=/^[986]\d{7}$/;
+    // var str="90445522";
+    // console.log(reg.test(str));
+    //匹配邮件 xxxx@xxx.com
+    var reg=/^\w+@\w+\.\w+$/;
+    var str="weijiagou@gmail.com";
+    console.log(reg.test(str))
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

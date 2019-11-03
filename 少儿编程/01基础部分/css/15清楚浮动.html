@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>清楚浮动</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* .clearfix {
+      content: "";
+      clear: both;
+      Display: block;
+      visibility:hidden;
+      Height: 0;
+    } */
+    .box {
+      /* width: 500px;
+      height: 500px; */
+      background-color: black;
+      margin-top: 30px;
+      /* overflow: hidden; */
+      /* display: inline-block;*/
+      position: absolute; 
+      
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: yellowgreen;
+      margin-top: 50px;
+      /* float: left; */
+    }
+
+    /* .box3 {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box2"></div>
+  </div>
+  <div class="box3"></div>
+</body>
+
+</html>

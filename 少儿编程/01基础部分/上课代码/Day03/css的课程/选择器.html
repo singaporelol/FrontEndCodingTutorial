@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>选择器</title>
+  <style>
+    /* Child combinator */
+    .parent>span{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <span>我是parent中的span</span>
+    <h1>我是Parent</h1>
+    <div id="child">
+      <span>我是Child的span标签</span>
+      <div class="grandchild">
+        <h2>我是重孙子</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

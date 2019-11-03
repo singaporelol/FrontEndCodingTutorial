@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>scope作用域</title>
+  <script>
+    
+    // 案例5：
+    f();
+
+    function f() {
+      for (var k = 0; k < 10; k++) {
+        console.log(k);
+      }
+      console.log(k);
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

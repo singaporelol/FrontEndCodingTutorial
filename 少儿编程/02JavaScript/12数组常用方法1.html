@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>常用方法1</title>
+  <script>
+    var arr = ["孙悟空", "猪八戒", "沙和尚"];
+    //会返回新数组的长度
+    var result = arr.push('白骨精');
+    console.log(arr);
+    console.log(result)
+    /*
+     * pop()
+     * 	- 该方法可以删除数组的最后一个元素,并将被删除的元素作为返回值返回
+     */
+    result = arr.pop();
+    console.log(arr);
+    console.log(result);
+    /*
+     * unshift()
+     * 	- 向数组开头添加一个或多个元素，并返回新的数组长度
+     * 	- 向前边插入元素以后，其他的元素索引会依次调整
+     */
+    result = arr.unshift("牛魔王");
+    console.log(arr);
+    console.log(result);
+    /*
+     * shift()
+     * 	- 可以删除数组的第一个元素，并将被删除的元素作为返回值返回
+     */
+    result = arr.shift();
+    console.log(arr);
+    console.log(result);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>call和apply</title>
+  <script>
+    var arr=[1,2,3,10,8];
+    console.log(Math.max.apply(Math,arr));
+    function Add(a,b){
+      let name="猪八戒";
+      console.log(this.name);
+      return a+b;
+    }
+    var obj={
+      name:"孙悟空",
+      num1:1,
+      num2:2,
+      run:function(){
+        console.log("一个跟头十万八千里");
+      }
+    }
+    // console.log(Add.apply(obj,[obj.num1,obj.num2]))
+    console.log(Add.call(obj,obj.num1,obj.num2))
+      
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let str = [2, 5, 1, 4, 6,1, 7, 3];
+    
+    for(let i=0;i<str.length;i++){
+      let k=i;
+      for(let j=i+1;j<str.length;j++){
+        if(str[k]>str[j]){
+          k=j
+        }
+      }
+      if(str[i]!=str[k]){
+        let temp=str[i];
+        str[i]=str[k];
+        str[k]=temp;
+      }
+    }
+
+
+    console.log(str);
+  </script>
+</body>
+
+</html>

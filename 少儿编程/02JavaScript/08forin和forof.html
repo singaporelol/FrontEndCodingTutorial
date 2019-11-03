@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>forin和forof</title>
+  <script>
+    obj={
+      name:"zhangsan",
+      age:18,
+    }
+
+    // for (const key in obj) {
+    //   if (obj.hasOwnProperty(key)) {
+    //     const element = obj[key];
+    //     console.log("key值: "+key+"。value: "+obj[key])
+    //   }
+    // }
+    // for (const iterator of obj) {
+    //   console.log(iterator)
+    // }
+    var array = [{"name":"张三","age":14},{"name":"李四","age":15}];
+    for(var person in array){
+	    console.log(person);
+    }
+    for(var person of array){
+    	console.log(person);
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

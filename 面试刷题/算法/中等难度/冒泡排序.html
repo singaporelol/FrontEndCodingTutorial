@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let m = [10,20,30,40,50];
+
+    function xxx(expenditure, d=3) {
+      let count = 0;
+      //d=3，选取10,20,30.那么遍历的次数是从3开始。
+      for (let i = d; i < expenditure.length; i++) {
+        let median = 0;
+        //拿到选取的数组3个，目的计算median
+        let arr = expenditure.slice(i - d, i).sort((a, b) => a - b);
+        median = arr.length % 2 ? arr[Math.floor(arr.length / 2)] : (arr[arr.length / 2] + arr[(arr.length / 2) - 1]) / 2
+        if (expenditure[i]>=(median * 2)) {
+          ++count;
+        }
+      }
+      return count;
+    }
+    console.log(xxx(m))
+  </script>
+</body>
+
+</html>

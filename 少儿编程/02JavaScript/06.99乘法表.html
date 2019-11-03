@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    /*
+     * 1.打印99乘法表
+     * 	 1*1=1
+     * 	 1*2=2 2*2=4
+     * 	 1*3=3 2*3=6 3*3=9
+     * 	 1*4=4 2*4=8 3*4=12 4*4=16	
+     * 						....9*9=81
+     * 
+     * 
+     */
+
+    for (var i = 1; i <= 9; i++) {
+      for (var j = 1; j <= i; j++) {
+        document.write(j + 'x' + i + '=' + i * j + " ")
+      }
+      document.write('<br>')
+    }
+    //2.打印出1-100之间所有的质数
+    for(i=2;i<=100;i++){
+      var flag=true;
+      for(j=2;j<i;j++){
+        if(i%j==0){
+          flag=false;
+          break;
+        }
+      }
+      flag&& console.log(i)
+    }
+  </script>
+  <title>99乘法表</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

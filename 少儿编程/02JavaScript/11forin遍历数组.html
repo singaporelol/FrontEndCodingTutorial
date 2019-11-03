@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>forin</title>
+  <script>
+    var arr = ["孙悟空", "猪八戒", "沙和尚", "唐僧", "白骨精"];
+    Array.prototype.name="大老虎";
+    for (const key in arr) {
+      if (arr.hasOwnProperty(key)) {
+        const ele = arr[key];
+        console.log(ele);
+      }
+    }
+  
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

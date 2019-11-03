@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>div</title>
+  <style>
+    /* Universal selector (所有的标签) */
+    /* *{
+      font-size: 20px;
+      color: red;
+    } */
+    /* 标签选择器type selector */
+    /* div{
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      color: red;
+      font-size: 30px;
+    } */
+    /* ID selector */
+    /* #haoyu{
+      font-size: 20px;
+      color: red;
+    } */
+    /* 类 class selector */
+    /* .xiangyu{
+      color: blue;
+      font-size: 30px;
+    } */
+    /* 层级选择器Descendant combinator */
+   /* .xiangyu span{
+      color: pink
+    } */
+    /* 并集选择器 comma combinator */
+    /* div span,h1,.xiangyu{
+      color: red;
+    } */
+    
+  </style>
+</head>
+<body>
+  <div id="haoyu">
+    <span>我是昊宇下面的文字</span>
+  </div>
+  <div class="xiangyu" >
+    my name is xiangyu
+    <span>我也会被影响到</span>
+  </div>
+  <h1>我不会被影响到</h1>
+  <span class="xiangyu">我是ICC的好孩子</span>
+</body>
+</html>

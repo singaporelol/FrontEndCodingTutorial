@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>foreach和map方法</title>
+  <script>
+    var arr = ["孙悟空", "猪八戒", "沙和尚", "唐僧", "白骨精"];
+    var result = arr.forEach(function (val, index, arr) {
+       console.log(val + " index: " + index + " arr" + arr);
+    });
+    console.log(result)
+    // var arr = ["孙悟空", "猪八戒", "沙和尚", "唐僧", "白骨精"];
+    // var result = arr.map(function (val, index, arr) {
+    //   console.log(val + " index: " + index + " arr" + arr)
+    //   return val + "!"
+    // })
+    // console.log(result)
+    
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
